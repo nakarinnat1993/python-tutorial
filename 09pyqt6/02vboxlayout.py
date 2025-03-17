@@ -8,7 +8,6 @@ class MainWindow(QWidget):
         self.setWindowTitle("Vertical Box Layout")
         
         vbox = QVBoxLayout(self)
-        self.setLayout(vbox)
         
         v_btn1 = QPushButton("V1")
         v_btn2 = QPushButton("V2")

@@ -8,7 +8,6 @@ class MainWindow(QWidget):
         self.setWindowTitle("Horizontal Box Layout")
         
         hbox = QHBoxLayout(self)
-        self.setLayout(hbox)
         
         h_btn1 = QPushButton("H1")
         h_btn2 = QPushButton("H2")
