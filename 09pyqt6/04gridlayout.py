@@ -6,6 +6,7 @@ class MainWindow(QWidget):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("Grid Layout")
+        self.setFixedSize(400, 400)
         
         grid = QGridLayout(self)
         
