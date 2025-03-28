@@ -9,11 +9,13 @@ class MainWindow(QWidget):
         
         hbox = QHBoxLayout(self)
         
-        h_btn1 = QPushButton("H1")
-        h_btn2 = QPushButton("H2")
-        
-        hbox.addWidget(h_btn1)
-        hbox.addWidget(h_btn2)
+        for message in ["A", "B", "C"]:
+            self.display_button(message, hbox)
+    
+    def display_button(self, text, layout):
+        button = QPushButton(text)
+        button.setFixedSize(100, 50)
+        layout.addWidget(button)
         
         
         

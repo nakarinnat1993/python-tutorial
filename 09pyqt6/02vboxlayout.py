@@ -9,11 +9,13 @@ class MainWindow(QWidget):
         
         vbox = QVBoxLayout(self)
         
-        v_btn1 = QPushButton("V1")
-        v_btn2 = QPushButton("V2")
-        
-        vbox.addWidget(v_btn1)
-        vbox.addWidget(v_btn2)
+        for message in ["A", "B", "C"]:
+            self.display_button(message, vbox)
+    
+    def display_button(self, text, layout):
+        button = QPushButton(text)
+        button.setFixedSize(100, 50)
+        layout.addWidget(button)
         
         
         
