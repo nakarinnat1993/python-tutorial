@@ -1,0 +1,16 @@
+
+* {
+    font-size: 15px;
+    font-weight: bold;
+}
+QPushButton {
+    color: blue;
+    background-color: white;
+    padding: 10p
+}
+#text_red {
+    color: red;
+}
+QLabel#text_red {
+    color: green;
+}
